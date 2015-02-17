@@ -1,5 +1,8 @@
 <h1>New video</h1>
 
-<%= render 'form' %>
-
+<!--<%= render 'form' %>-->
+ <video id="video" width="640" height="480" autoplay></video>
+   <button id="snap">Snap Photo</button>
+   <canvas id="canvas" width="640" height="480"></canvas>
+  <div class="actions">
 <%= link_to 'Back', videos_path %>

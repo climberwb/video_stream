@@ -47,11 +47,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
   }
  
+// Trigger photo take
+document.getElementById("snap").addEventListener("click", function(e) {
+  context.drawImage(video, 0, 0, 640, 480);
+});
 
 }, false);
 
- // Trigger photo take
-document.getElementById("snap").addEventListener("click", function(e) {
-  context.drawImage(video, 0, 0, 640, 480);
-  $('#snap').preventDefault(); 
-});
